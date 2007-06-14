@@ -8,8 +8,8 @@ class MimeTypeFu
   end
   
   def mime
-    @extensions[File.extname(@file.path).to_sym]
-    @extensions
+    
+    @extensions[File.extname(@file.path).gsub('.','').to_sym]
   end
   
 end
