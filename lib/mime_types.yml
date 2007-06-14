@@ -87,7 +87,6 @@ png: image/png
 bkm: application/vnd.nervana
 sxl: application/vnd.sealed.xls
 xfdf: application/vnd.adobe.xfdf
-asf: application/vnd.ms-asf
 snd: audio/basic
 dl: video/dl
 sxls: application/vnd.sealed.xls
@@ -365,3 +364,18 @@ dtd: text/xml
 hvp: application/vnd.yamaha.hv-voice
 cww: application/prs.cww
 vss: application/vnd.visio
+rb: application/x-ruby
+log: text/plain
+swf: application/x-shockwave-flash
+flv: video/x-flv
+asf: video/x-ms-asf
+asx: video/x-ms-asf
+wma: audio/x-ms-wma
+wax: audio/x-ms-wax
+wmv: audio/x-ms-wmv
+wvx: video/x-ms-wvx
+wm: video/x-ms-wm
+wmx: video/x-ms-wmx
+wmz: application/x-ms-wmz
+wmd: application/x-ms-wmd
+
