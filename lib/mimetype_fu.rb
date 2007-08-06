@@ -5,10 +5,10 @@ class File
       unless RUBY_PLATFORM.include? 'mswin32'
         mime = `file -ir #{file}`.scan(/.*: (.*)/)[0][0]
       else
-        mime = ::EXTENSIONS[File.extname(file.path).gsub('.','').to_sym]
+        mime = ::EXTENSIONS[File.extname(file.path).gsub('.','').downcase.to_sym]
       end
     elsif file.class == String
-      mime = EXTENSIONS[(file[file.rindex('.')+1, file.size]).to_sym]
+      mime = EXTENSIONS[(file[file.rindex('.')+1, file.size]).downcase.to_sym]
     end
 
     if mime
