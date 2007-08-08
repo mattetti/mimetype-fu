@@ -3,7 +3,7 @@ class File
   def self.mime_type?(file)
     if file.class == File
       unless RUBY_PLATFORM.include? 'mswin32'
-        mime = `file -ir #{file}`.scan(/.*: (.*)/)[0][0]
+        mime = `file -ir #{file.path}`.scan(/.*: (.*);(.*)/)[0][0]
       else
         mime = ::EXTENSIONS[File.extname(file.path).gsub('.','').downcase.to_sym]
       end
