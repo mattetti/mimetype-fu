@@ -275,6 +275,7 @@ mp3: audio/mpeg
 class: application/x-java-vm
 smo: video/vnd.sealedmedia.softseal.mov
 mp4: video/vnd.objectvideo
+m4v: video/x-m4v 
 htx: text/html
 hbci: application/vnd.hbci
 tex: application/x-tex
