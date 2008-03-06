@@ -251,6 +251,7 @@ spf: application/vnd.yamaha.smaf-phrase
 kar: audio/x-midi
 mid: audio/x-midi
 3gp: video/3gpp
+3g2: video/3gpp2
 hqx: application/mac-binhex40
 p7s: application/pkcs7-signature
 ppm: image/x-portable-pixmap
