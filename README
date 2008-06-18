@@ -8,7 +8,7 @@ As an alternative, I wrote mimetype_fu, a simple plugin which will try to guess 
 
 Note that mimetype_fu only looks at the extension to define its mime type if you are using Windows!
 
-http://code.google.com/p/mimetype-fu/
+http://github.com/mattetti/mimetype-fu
 
 Thanks to forestcarlisle for his big report and patch.
 
