@@ -198,6 +198,7 @@ hpgl: application/vnd.hp-hpgl
 hpp: text/x-c++hdr
 hqx: application/mac-binhex40
 hs: text/x-haskell
+htc: text/x-component
 htke: application/vnd.kenameaapp
 htm: text/html
 html: text/html
