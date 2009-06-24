@@ -1,3 +1,6 @@
+require 'tempfile'
+require 'extensions_const'
+
 class File
 
   def self.mime_type?(file)
