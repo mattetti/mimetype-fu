@@ -7,7 +7,7 @@ class File
     case file
     when File, Tempfile
       unless RUBY_PLATFORM.include? 'mswin32'
-        mime = `file --mime -br "#{file.path}"`.strip
+        mime = `file --mime -b "#{file.path}"`.strip
       else
         mime = EXTENSIONS[File.extname(file.path).gsub('.','').downcase.to_sym]
       end
@@ -17,7 +17,7 @@ class File
       temp = File.open(Dir.tmpdir + '/upload_file.' + Process.pid.to_s, "wb")
       temp << file.string
       temp.close
-      mime = `file --mime -br "#{temp.path}"`
+      mime = `file --mime -b "#{temp.path}"`
       mime = mime.gsub(/^.*: */,"")
       mime = mime.gsub(/;.*$/,"")
       mime = mime.gsub(/,.*$/,"")
